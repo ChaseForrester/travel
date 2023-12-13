@@ -7,6 +7,7 @@
   Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
 */
 import 'package:flutter/material.dart';
+
 import '/pages/payment.dart';
 import '/widget/elevated_button.dart';
 import '/widget/text_btn.dart';
@@ -18,7 +19,7 @@ class BookingDetail extends StatefulWidget {
   const BookingDetail({Key? key}) : super(key: key);
 
   @override
-  _BookingDetailState createState() => _BookingDetailState();
+  State<BookingDetail> createState() => _BookingDetailState();
 }
 
 class _BookingDetailState extends State<BookingDetail> {

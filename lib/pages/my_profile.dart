@@ -7,6 +7,7 @@
   Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
 */
 import 'package:flutter/material.dart';
+
 import '/pages/edit_profile.dart';
 import '/pages/invite_friend.dart';
 import '/pages/language.dart';
@@ -22,7 +23,7 @@ class MyProfile extends StatefulWidget {
   const MyProfile({Key? key}) : super(key: key);
 
   @override
-  _MyProfileState createState() => _MyProfileState();
+  State<MyProfile> createState() => _MyProfileState();
 }
 
 class _MyProfileState extends State<MyProfile> {

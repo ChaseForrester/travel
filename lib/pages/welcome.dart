@@ -8,6 +8,7 @@
 */
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+
 import '/pages/login.dart';
 import '/widget/text_btn.dart';
 import '../components/styles.dart';
@@ -18,7 +19,7 @@ class Welcome extends StatefulWidget {
   const Welcome({Key? key}) : super(key: key);
 
   @override
-  _WelcomeState createState() => _WelcomeState();
+  State<Welcome> createState() => _WelcomeState();
 }
 
 class _WelcomeState extends State<Welcome> {

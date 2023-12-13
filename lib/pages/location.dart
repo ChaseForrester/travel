@@ -7,6 +7,7 @@
   Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
 */
 import 'package:flutter/material.dart';
+
 import '/pages/place_detail.dart';
 import '/widget/navbar.dart';
 
@@ -16,7 +17,7 @@ class Location extends StatefulWidget {
   const Location({Key? key}) : super(key: key);
 
   @override
-  _LocationState createState() => _LocationState();
+  State<Location> createState() => _LocationState();
 }
 
 class _LocationState extends State<Location> {

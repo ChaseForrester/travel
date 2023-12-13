@@ -19,7 +19,7 @@ class CardDetail extends StatefulWidget {
   const CardDetail({Key? key}) : super(key: key);
 
   @override
-  _CardDetailState createState() => _CardDetailState();
+  State<CardDetail> createState() => _CardDetailState();
 }
 
 class _CardDetailState extends State<CardDetail> {

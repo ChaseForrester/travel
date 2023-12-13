@@ -7,6 +7,7 @@
   Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
 */
 import 'package:flutter/material.dart';
+
 import '/pages/tabs.dart';
 import '/widget/elevated_button.dart';
 import '../components/styles.dart';
@@ -17,7 +18,7 @@ class PaymentSuccess extends StatefulWidget {
   const PaymentSuccess({Key? key}) : super(key: key);
 
   @override
-  _PaymentSuccessState createState() => _PaymentSuccessState();
+  State<PaymentSuccess> createState() => _PaymentSuccessState();
 }
 
 class _PaymentSuccessState extends State<PaymentSuccess> {

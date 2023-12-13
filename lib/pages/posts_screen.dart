@@ -7,6 +7,7 @@
   Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
 */
 import 'package:flutter/material.dart';
+
 import '/pages/filter.dart';
 import '/pages/place_detail.dart';
 import '/pages/search.dart';
@@ -19,7 +20,7 @@ class PostScreen extends StatefulWidget {
   const PostScreen({Key? key}) : super(key: key);
 
   @override
-  _PostScreenState createState() => _PostScreenState();
+  State<PostScreen> createState() => _PostScreenState();
 }
 
 class _PostScreenState extends State<PostScreen> {
@@ -81,6 +82,7 @@ class _PostScreenState extends State<PostScreen> {
                 icon: const Icon(Icons.search)),
           ],
           bottom: PreferredSize(
+            preferredSize: const Size(0.0, 40.0),
             child: SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Container(
@@ -92,7 +94,6 @@ class _PostScreenState extends State<PostScreen> {
                 ),
               ),
             ),
-            preferredSize: const Size(0.0, 40.0),
           ),
         ),
         body: _buildBody());
@@ -135,8 +136,8 @@ class _PostScreenState extends State<PostScreen> {
                           image: AssetImage(travelList[i].img),
                           fit: BoxFit.cover),
                     ),
-                    child: Stack(
-                      children: const [
+                    child: const Stack(
+                      children: [
                         Positioned(
                             bottom: 8,
                             right: 8,
@@ -173,10 +174,10 @@ class _PostScreenState extends State<PostScreen> {
                     color: backgroundColor,
                     child: Row(
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           width: 90,
                           child: Stack(
-                            children: const [
+                            children: [
                               Align(
                                 alignment: Alignment.centerRight,
                                 child: CircleAvatar(

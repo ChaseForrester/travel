@@ -7,6 +7,7 @@
   Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
 */
 import 'package:flutter/material.dart';
+
 import '/pages/my_profile.dart';
 import '/widget/elevated_button.dart';
 import '../components/styles.dart';
@@ -17,7 +18,7 @@ class EditProfile extends StatefulWidget {
   const EditProfile({Key? key}) : super(key: key);
 
   @override
-  _EditProfileState createState() => _EditProfileState();
+  State<EditProfile> createState() => _EditProfileState();
 }
 
 class _EditProfileState extends State<EditProfile> {
@@ -64,16 +65,16 @@ class _EditProfileState extends State<EditProfile> {
                     child: Container(
                       width: 25,
                       height: 25,
-                      child: const Icon(
-                        Icons.add,
-                        color: Colors.white,
-                      ),
                       decoration: BoxDecoration(
                           color: appColor,
                           borderRadius: const BorderRadius.all(
                             Radius.circular(100),
                           ),
                           border: Border.all(width: 1, color: Colors.white)),
+                      child: const Icon(
+                        Icons.add,
+                        color: Colors.white,
+                      ),
                     )),
               ],
             ),

@@ -7,6 +7,7 @@
   Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
 */
 import 'package:flutter/material.dart';
+
 import '/widget/navbar.dart';
 
 class Language extends StatefulWidget {
@@ -15,7 +16,7 @@ class Language extends StatefulWidget {
   const Language({Key? key}) : super(key: key);
 
   @override
-  _LanguageState createState() => _LanguageState();
+  State<Language> createState() => _LanguageState();
 }
 
 class _LanguageState extends State<Language>

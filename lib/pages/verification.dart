@@ -7,6 +7,7 @@
   Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
 */
 import 'package:flutter/material.dart';
+
 import '/pages/tabs.dart';
 import '/widget/elevated_button.dart';
 import '/widget/text_btn.dart';
@@ -18,7 +19,7 @@ class Verification extends StatefulWidget {
   const Verification({Key? key}) : super(key: key);
 
   @override
-  _VerificationState createState() => _VerificationState();
+  State<Verification> createState() => _VerificationState();
 }
 
 class _VerificationState extends State<Verification> {
@@ -96,9 +97,9 @@ class _VerificationState extends State<Verification> {
               ],
             ),
           ),
-          Row(
+          const Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const [
+            children: [
               Text(
                 '',
                 style: TextStyle(color: Colors.white, fontSize: 14),

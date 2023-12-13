@@ -6,11 +6,12 @@
   terms found in the Website https://codecanyon.net/licenses/standard/
   Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
 */
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+
 import '/pages/booking.dart';
 import '/widget/elevated_button.dart';
 import '../components/styles.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 
 class PlaceDetail extends StatefulWidget {
   static const String id = 'PlaceDetail';
@@ -18,7 +19,7 @@ class PlaceDetail extends StatefulWidget {
   const PlaceDetail({Key? key}) : super(key: key);
 
   @override
-  _PlaceDetailState createState() => _PlaceDetailState();
+  State<PlaceDetail> createState() => _PlaceDetailState();
 }
 
 class _PlaceDetailState extends State<PlaceDetail>
@@ -195,7 +196,7 @@ class _PlaceDetailState extends State<PlaceDetail>
                       ),
                       Row(
                         children: [
-                          Row(children: const [
+                          const Row(children: [
                             Icon(Icons.star, color: Colors.orange, size: 14),
                             Icon(Icons.star, color: Colors.orange, size: 14),
                             Icon(Icons.star, color: Colors.orange, size: 14),

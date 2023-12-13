@@ -7,6 +7,7 @@
   Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
 */
 import 'package:flutter/material.dart';
+
 import '/widget/navbar.dart';
 import '/widget/text_btn.dart';
 import '../components/styles.dart';
@@ -17,7 +18,7 @@ class MyTrip extends StatefulWidget {
   const MyTrip({Key? key}) : super(key: key);
 
   @override
-  _MyTripState createState() => _MyTripState();
+  State<MyTrip> createState() => _MyTripState();
 }
 
 class _MyTripState extends State<MyTrip> with SingleTickerProviderStateMixin {

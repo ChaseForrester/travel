@@ -7,6 +7,7 @@
   Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
 */
 import 'package:flutter/material.dart';
+
 import '/widget/navbar.dart';
 import '../components/styles.dart';
 
@@ -16,7 +17,7 @@ class Favorite extends StatefulWidget {
   const Favorite({Key? key}) : super(key: key);
 
   @override
-  _FavoriteState createState() => _FavoriteState();
+  State<Favorite> createState() => _FavoriteState();
 }
 
 class _FavoriteState extends State<Favorite> {
@@ -114,7 +115,7 @@ class _FavoriteState extends State<Favorite> {
                   const SizedBox(height: 8),
                   Row(
                     children: [
-                      Row(children: const [
+                      const Row(children: [
                         Icon(Icons.star, color: Colors.orange, size: 14),
                         Icon(Icons.star, color: Colors.orange, size: 14),
                         Icon(Icons.star, color: Colors.orange, size: 14),

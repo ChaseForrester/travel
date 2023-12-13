@@ -7,6 +7,7 @@
   Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
 */
 import 'package:flutter/material.dart';
+
 import '/pages/tabs.dart';
 import '/widget/elevated_button.dart';
 import '../components/styles.dart';
@@ -17,7 +18,7 @@ class InviteFriend extends StatefulWidget {
   const InviteFriend({Key? key}) : super(key: key);
 
   @override
-  _InviteFriendState createState() => _InviteFriendState();
+  State<InviteFriend> createState() => _InviteFriendState();
 }
 
 class _InviteFriendState extends State<InviteFriend> {

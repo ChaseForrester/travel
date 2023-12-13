@@ -6,13 +6,14 @@
   terms found in the Website https://codecanyon.net/licenses/standard/
   Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
 */
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
+
 import '/pages/location.dart';
 import '/pages/posts_screen.dart';
 import '/pages/search.dart';
 import '/widget/navbar.dart';
 import '../components/styles.dart';
-import 'package:carousel_slider/carousel_slider.dart';
 
 class Home extends StatefulWidget {
   static const String id = 'Home';
@@ -20,7 +21,7 @@ class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
   @override
-  _HomeState createState() => _HomeState();
+  State<Home> createState() => _HomeState();
 }
 
 class _HomeState extends State<Home> {
@@ -327,8 +328,8 @@ class _HomeState extends State<Home> {
                 image: DecorationImage(
                     image: AssetImage(e.img), fit: BoxFit.cover),
               ),
-              child: Stack(
-                children: const [
+              child: const Stack(
+                children: [
                   Positioned(
                       bottom: 8,
                       left: 8,
@@ -344,7 +345,7 @@ class _HomeState extends State<Home> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(height: 4),
-                Row(children: const [
+                const Row(children: [
                   Icon(Icons.star, color: Colors.orange, size: 14),
                   Icon(Icons.star, color: Colors.orange, size: 14),
                   Icon(Icons.star, color: Colors.orange, size: 14),
@@ -389,8 +390,8 @@ class _HomeState extends State<Home> {
                 image: DecorationImage(
                     image: AssetImage(e.img), fit: BoxFit.cover),
               ),
-              child: Stack(
-                children: const [
+              child: const Stack(
+                children: [
                   Positioned(
                       bottom: 8,
                       right: 8,
@@ -458,7 +459,7 @@ class _HomeState extends State<Home> {
                 const SizedBox(height: 4),
                 Row(
                   children: [
-                    Row(children: const [
+                    const Row(children: [
                       Icon(Icons.star, color: Colors.orange, size: 14),
                       Icon(Icons.star, color: Colors.orange, size: 14),
                       Icon(Icons.star, color: Colors.orange, size: 14),

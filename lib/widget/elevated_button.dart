@@ -7,6 +7,7 @@
   Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
 */
 import 'package:flutter/material.dart';
+
 import '../components/styles.dart';
 
 class MyElevatedButton extends StatelessWidget {
@@ -36,8 +37,8 @@ class MyElevatedButton extends StatelessWidget {
       child: ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
-          primary: colors,
-          onPrimary: Colors.white,
+          foregroundColor: Colors.white,
+          backgroundColor: colors,
           shadowColor: appColor,
           elevation: 3,
           shape: (RoundedRectangleBorder(

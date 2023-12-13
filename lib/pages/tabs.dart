@@ -7,11 +7,11 @@
   Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
 */
 import 'package:flutter/material.dart';
+
 import '/pages/favorite.dart';
 import '/pages/home.dart';
 import '/pages/my_profile.dart';
 import '/pages/my_trip.dart';
-
 import '../components/styles.dart' as style;
 
 class TabsExample extends StatefulWidget {
@@ -19,7 +19,7 @@ class TabsExample extends StatefulWidget {
   static const String id = 'Tabs';
 
   @override
-  _TabsExampleState createState() => _TabsExampleState();
+  State<TabsExample> createState() => _TabsExampleState();
 }
 
 class _TabsExampleState extends State<TabsExample> {

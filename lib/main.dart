@@ -7,6 +7,7 @@
   Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
 */
 import 'package:flutter/material.dart';
+
 import '/pages/welcome.dart';
 import '../components/styles.dart';
 
@@ -26,7 +27,6 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily: "regular",
         primaryColor: appColor,
-        backgroundColor: appColor,
         dividerColor: Colors.transparent,
       ),
       initialRoute: Welcome.id,

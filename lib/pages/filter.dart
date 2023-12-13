@@ -7,6 +7,7 @@
   Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
 */
 import 'package:flutter/material.dart';
+
 import '/widget/text_btn.dart';
 import '../components/styles.dart';
 
@@ -16,7 +17,7 @@ class Filter extends StatefulWidget {
   const Filter({Key? key}) : super(key: key);
 
   @override
-  _FilterState createState() => _FilterState();
+  State<Filter> createState() => _FilterState();
 }
 
 class _FilterState extends State<Filter> {

@@ -7,6 +7,7 @@
   Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
 */
 import 'package:flutter/material.dart';
+
 import '/pages/card_detail.dart';
 import '../components/styles.dart';
 
@@ -16,7 +17,7 @@ class Payment extends StatefulWidget {
   const Payment({Key? key}) : super(key: key);
 
   @override
-  _PaymentState createState() => _PaymentState();
+  State<Payment> createState() => _PaymentState();
 }
 
 class _PaymentState extends State<Payment> {
