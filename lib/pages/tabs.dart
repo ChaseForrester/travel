@@ -1,18 +1,10 @@
-/*
-  Authors : flutter_ninja (Flutter Ninja)
-  Website : https://codecanyon.net/user/flutter_ninja/
-  App Name : Outing Trip Clone Template
-  This App Template Source code is licensed as per the
-  terms found in the Website https://codecanyon.net/licenses/standard/
-  Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
-*/
 import 'package:flutter/material.dart';
 
+import '../components/styles.dart' as style;
 import '/pages/favorite.dart';
 import '/pages/home.dart';
 import '/pages/my_profile.dart';
 import '/pages/my_trip.dart';
-import '../components/styles.dart' as style;
 
 class TabsExample extends StatefulWidget {
   const TabsExample({Key? key}) : super(key: key);

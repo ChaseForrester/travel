@@ -1,13 +1,6 @@
-/*
-  Authors : flutter_ninja (Flutter Ninja)
-  Website : https://codecanyon.net/user/flutter_ninja/
-  App Name : Outing Trip Clone Template
-  This App Template Source code is licensed as per the
-  terms found in the Website https://codecanyon.net/licenses/standard/
-  Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
-*/
 import 'package:flutter/material.dart';
 
+import '../components/styles.dart';
 import '/pages/edit_profile.dart';
 import '/pages/invite_friend.dart';
 import '/pages/language.dart';
@@ -15,7 +8,6 @@ import '/pages/my_trip.dart';
 import '/pages/notification.dart';
 import '/widget/navbar.dart';
 import '/widget/text_btn.dart';
-import '../components/styles.dart';
 
 class MyProfile extends StatefulWidget {
   static const String id = 'MyProfile';

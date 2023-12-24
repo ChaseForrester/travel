@@ -1,16 +1,9 @@
-/*
-  Authors : flutter_ninja (Flutter Ninja)
-  Website : https://codecanyon.net/user/flutter_ninja/
-  App Name : Outing Trip Clone Template
-  This App Template Source code is licensed as per the
-  terms found in the Website https://codecanyon.net/licenses/standard/
-  Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
-*/
 import 'package:flutter/material.dart';
+import 'package:flutter_credit_card/flutter_credit_card.dart';
+
+import '../components/styles.dart';
 import '/pages/payment_success.dart';
 import '/widget/elevated_button.dart';
-import '../components/styles.dart';
-import 'package:flutter_credit_card/flutter_credit_card.dart';
 // import 'package:flutter_credit_card/credit_card_brand.dart';
 
 class CardDetail extends StatefulWidget {

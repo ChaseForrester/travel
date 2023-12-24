@@ -1,16 +1,9 @@
-/*
-  Authors : flutter_ninja (Flutter Ninja)
-  Website : https://codecanyon.net/user/flutter_ninja/
-  App Name : Outing Trip Clone Template
-  This App Template Source code is licensed as per the
-  terms found in the Website https://codecanyon.net/licenses/standard/
-  Copyright and Good Faith Purchasers © 2022-present flutter_ninja.
-*/
 import 'package:flutter/material.dart';
+
+import '../components/styles.dart';
 import '/pages/booking_detail.dart';
 import '/pages/choose_date.dart';
 import '/widget/elevated_button.dart';
-import '../components/styles.dart';
 
 class Booking extends StatefulWidget {
   static const String id = 'Booking';
